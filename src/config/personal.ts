@@ -20,5 +20,5 @@ export const personalInfo: PersonalInfo = {
   website: "https://phatngo.vercel.app",
   summary:
     "AI Engineer specializing in LLMs, RAG systems, and AI agents. Experienced in building production-grade AI backends with FastAPI, LangChain, and LangGraph. Passionate about applying AI to solve real-world problems.",
-  chatEnabled: false,
+  chatEnabled: true,
 };
