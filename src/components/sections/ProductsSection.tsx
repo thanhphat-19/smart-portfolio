@@ -32,7 +32,8 @@ export default function ProductsSection() {
           className="flex-shrink-0 md:flex-shrink md:flex-1 md:min-w-0 h-[280px] sm:h-[320px] md:h-full"
         >
           <div
-            className="group block h-full rounded-2xl border border-card-theme-border bg-products-bg overflow-hidden hover:border-terminal-green/30 transition-all duration-500 relative"
+            className="group block h-full rounded-2xl border border-card-theme-border bg-products-bg overflow-hidden hover:border-terminal-green/30 transition-all duration-500 relative cursor-pointer"
+            onClick={() => project.url && window.open(project.url, "_blank")}
           >
             {/* Full Image Background */}
             <div className="absolute inset-0 flex items-center justify-center p-3 pb-28">

@@ -190,7 +190,7 @@ export default async function BlogPost({
                     {postData.author}
                   </h4>
                   <p className="text-sm text-terminal-muted mt-1">
-                    AI Engineer specializing in LLMs, RAG systems, and AI agents.
+                      {personalInfo.summary}
                   </p>
                 </div>
               </div>
