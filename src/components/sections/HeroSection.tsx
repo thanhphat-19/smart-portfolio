@@ -26,12 +26,7 @@ export default function HeroSection() {
   const [displayText, setDisplayText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
 
-  const roles = [
-    "Full Stack Developer",
-    "Agentic Coder",
-    "AI Engineer",
-    "Problem Solver",
-  ];
+  const roles = heroContent.roles;
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -160,10 +155,11 @@ export default function HeroSection() {
           transition={{ delay: 0.6 }}
           className="text-terminal-muted text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-xs leading-relaxed flex-shrink-0"
         >
-          Building software at the speed of thought with{" "}
-          <span className="text-terminal-cyan">AI-native</span> tools.
-          Shipping production code with{" "}
-          <span className="text-terminal-cyan">Claude Code</span> &{" "}
+          Building <span className="text-terminal-cyan">AI-native</span> systems with{" "}
+          <span className="text-terminal-cyan">LLMs</span>,{" "}
+          <span className="text-terminal-cyan">knowledge graphs</span>, and{" "}
+          <span className="text-terminal-cyan">search pipelines</span>. Shipping{" "}
+          <span className="text-terminal-cyan">production-grade</span> solutions using{" "}
           <span className="text-terminal-cyan">agentic workflows</span>.
         </motion.p>
       </div>

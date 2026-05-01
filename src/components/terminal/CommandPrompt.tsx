@@ -12,7 +12,7 @@ interface CommandPromptProps {
 }
 
 export default function CommandPrompt({
-  user = "ahmed",
+  user = "phatngo",
   host = "portfolio",
   path = "~",
   children,

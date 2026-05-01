@@ -10,7 +10,7 @@ import {
 } from "../../../../utils/markdown";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Tag, User, Terminal } from "lucide-react";
-import heroImage from "@/assets/Ahmed.jpeg";
+import { personalInfo } from "@/config";
 
 export async function generateStaticParams() {
   const paths = await getAllPostIds();
@@ -179,19 +179,18 @@ export default async function BlogPost({
               </h3>
               <div className="flex items-center gap-4 p-4 rounded-lg bg-terminal-bg-alt border border-terminal-border">
                 <Image
-                  src={heroImage}
+                  src={personalInfo.profileImage}
                   alt={postData.author}
                   width={64}
                   height={64}
-                  className="rounded-lg"
+                  className="rounded-lg object-cover"
                 />
                 <div>
                   <h4 className="font-semibold text-terminal-green">
                     {postData.author}
                   </h4>
                   <p className="text-sm text-terminal-muted mt-1">
-                    Full Stack Developer & AI Engineer exploring the
-                    intersections of code and creativity.
+                    AI Engineer specializing in LLMs, RAG systems, and AI agents.
                   </p>
                 </div>
               </div>

@@ -112,7 +112,7 @@ export default function AgenticSection() {
           <div className="flex items-center gap-1 ml-2 min-w-0">
             <Terminal size={10} className="text-terminal-muted flex-shrink-0" />
             <span className="text-[9px] font-mono text-terminal-muted truncate">
-              ahmed@dev<span className="text-terminal-muted/50">:</span><span className="text-terminal-cyan">~/agentic</span>
+              phatngo@dev<span className="text-terminal-muted/50">:</span><span className="text-terminal-cyan">~/agentic</span>
             </span>
           </div>
         </div>
