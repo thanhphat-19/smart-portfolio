@@ -3,19 +3,19 @@ import { personalInfo } from "./personal";
 
 export const seoConfig: SEOConfig = {
   siteName: `${personalInfo.fullName} Portfolio`,
-  siteUrl: "https://medevsmaker.vercel.app",
+  siteUrl: "https://phatngo.vercel.app",
   description:
-    "Full Stack Developer & AI Engineer specializing in React, Next.js, TypeScript, and AI-powered applications. Building intelligent software with modern web technologies.",
+    "AI Engineer specializing in LLMs, RAG systems, and AI agents. Building production-grade AI backends with FastAPI, LangChain, and LangGraph.",
   keywords: [
-    "Full Stack Developer",
     "AI Engineer",
-    "React",
-    "Next.js",
-    "TypeScript",
+    "LLM",
+    "RAG",
     "LangChain",
-    "OpenAI",
-    "Web Development",
-    "Software Engineer",
+    "LangGraph",
+    "FastAPI",
+    "Python",
+    "MLOps",
+    "AI Agent",
     personalInfo.fullName,
   ],
   author: {
@@ -27,7 +27,7 @@ export const seoConfig: SEOConfig = {
     locale: "en_US",
     title: `${personalInfo.fullName} - ${personalInfo.title}`,
     description:
-      "Full Stack Developer & AI Engineer building intelligent software with modern web technologies.",
+      "AI Engineer building production-grade LLM systems, RAG pipelines, and AI agents.",
     images: [
       {
         url: "/og-image.png",
@@ -41,8 +41,8 @@ export const seoConfig: SEOConfig = {
     card: "summary_large_image",
     title: `${personalInfo.fullName} - ${personalInfo.title}`,
     description:
-      "Full Stack Developer & AI Engineer building intelligent software with modern web technologies.",
+      "AI Engineer building production-grade LLM systems, RAG pipelines, and AI agents.",
     images: ["/og-image.png"],
-    creator: "@medevs",
+    creator: "@thphat19",
   },
 };

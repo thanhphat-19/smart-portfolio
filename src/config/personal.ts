@@ -1,23 +1,23 @@
 import type { PersonalInfo } from "./types";
 
 export const personalInfo: PersonalInfo = {
-  firstName: "Ahmed",
-  lastName: "",
-  fullName: "Ahmed",
-  email: "oublihi.a@gmail.com",
+  firstName: "Phát",
+  lastName: "Ngô",
+  fullName: "Ngô Thành Phát",
+  email: "thanhphat352@gmail.com",
   location: {
-    city: "Bremen",
-    country: "Germany",
-    display: "Bremen, Germany",
+    city: "Ho Chi Minh City",
+    country: "Vietnam",
+    display: "Ho Chi Minh City, Vietnam",
   },
-  title: "Full Stack Developer & AI Engineer",
+  title: "AI Engineer",
   availability: {
     status: "available",
-    message: "Available for work",
+    message: "Open to opportunities",
   },
-  resumeUrl: "/Ahmed_CV.pdf",
-  profileImage: "/images/profile.jpeg",
-  website: "https://medevsmaker.vercel.app",
+  resumeUrl: "/Ngo Thanh Phat-AI_Engineer.pdf",
+  profileImage: "/images/profile.jpg",
+  website: "https://phatngo.vercel.app",
   summary:
-    "Full Stack Developer specializing in JavaScript, PHP, and modern web technologies. Experienced in developing efficient web applications and optimizing enterprise software. Combining technical expertise with a passion for AI to create innovative solutions.",
+    "AI Engineer specializing in LLMs, RAG systems, and AI agents. Experienced in building production-grade AI backends with FastAPI, LangChain, and LangGraph. Passionate about applying AI to solve real-world problems.",
 };

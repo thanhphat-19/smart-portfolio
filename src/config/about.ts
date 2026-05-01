@@ -2,17 +2,14 @@ import type { AboutConfig, Language } from "./types";
 
 export const aboutConfig: AboutConfig = {
   languages: [
-    { language: "German", proficiency: "B2-C1" },
-    { language: "English", proficiency: "B2" },
-    { language: "French", proficiency: "B1" },
-    { language: "Berber", proficiency: "Native" },
-    { language: "Arabic", proficiency: "Native" },
+    { language: "Vietnamese", proficiency: "Native" },
+    { language: "English", proficiency: "Professional" },
   ],
   interests: [
-    "Open Source Contributions",
-    "AI and Machine Learning",
-    "Software Architecture",
-    "Problem Solving and Logical Thinking",
+    "Large Language Models & AI Agents",
+    "RAG and Knowledge Graphs",
+    "MLOps and AI Infrastructure",
+    "Open Source AI Research",
   ],
-  softSkills: ["Problem Solving", "Logical Thinking", "Teamwork", "Communication"],
+  softSkills: ["Problem Solving", "Adaptability", "Team Work", "Research"],
 };

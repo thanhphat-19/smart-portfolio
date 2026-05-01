@@ -57,7 +57,7 @@ export interface SEOConfig {
 export interface Project {
   name: string;
   description: string;
-  status: "active" | "building" | "planned";
+  status: "active" | "building" | "planned" | "completed";
   url?: string;
   tech: string[];
   image?: string;

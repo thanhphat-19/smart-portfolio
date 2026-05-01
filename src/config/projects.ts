@@ -2,29 +2,30 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    name: "MentorClone",
+    name: "End-to-end MLOps Pipeline",
     description:
-      "Transform any YouTube channel into your personal AI mentor. Ask questions and get answers grounded in actual video content, complete with timestamps for verification.",
-    status: "active",
-    url: "https://mentorclone.ai",
-    tech: ["React", "Supabase", "OpenAI", "YouTube API"],
-    image: "/images/projects/mentorclone.png",
+      "Full lifecycle MLOps pipeline on GCP for a card approval prediction model. Covers infrastructure provisioning, containerized ML services on Kubernetes, CI/CD, and observability.",
+    status: "completed",
+    url: "https://github.com/thanhphat-19/card-approval-prediction",
+    tech: ["GCP", "Kubernetes", "Terraform", "Ansible", "Jenkins", "MLflow", "FastAPI", "Python", "Prometheus"],
+    image: "/images/projects/mlops-pipeline.png",
   },
   {
-    name: "TalkTheDoc",
+    name: "OpenAI Agent Chatbot",
     description:
-      "Voice-first AI document assistant. Have natural spoken conversations with PDFs, Word docs, and more — no typing required.",
-    status: "active",
-    url: "https://talkthedoc.com",
-    tech: ["Next.js", "TypeScript", "Convex", "AI SDK"],
-    image: "/images/projects/talkthedoc.png",
+      "Two-service AI chat system with SSE streaming. chatbot-be handles session management and PostgreSQL persistence; chatbot-ai-service runs OpenAI Agents SDK with stateless execution and real-time streaming.",
+    status: "completed",
+    url: "https://github.com/thanhphat-19/openai-agent-chatbot",
+    tech: ["OpenAI Agents SDK", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "Docker", "SSE"],
+    image: "/images/projects/openai-agent-chatbot.png",
   },
   {
-    name: "Your Daily Way",
-    description: "High-performance blog platform built with modern web technologies for optimal speed and SEO.",
-    status: "active",
-    url: "http://yourdailyway.com",
-    tech: ["Astro", "React", "TypeScript", "Markdown"],
-    image: "/images/projects/yourdailyway.png",
+    name: "News Article Processing Service",
+    description:
+      "Distributed service for processing and analyzing news articles using LLMs. Event-driven architecture with RabbitMQ and Celery for async task processing. Supports OpenAI, Anthropic, Gemini, Cohere, and Ollama.",
+    status: "completed",
+    url: "https://github.com/thanhphat-19/news-article-processing-ml-service",
+    tech: ["Python", "RabbitMQ", "Celery", "Redis", "FastAPI", "Gradio", "Docker"],
+    image: undefined,
   },
 ];

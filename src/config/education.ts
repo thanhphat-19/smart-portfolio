@@ -2,42 +2,51 @@ import type { Education, Certification } from "./types";
 
 export const education: Education[] = [
   {
-    id: "szut-2021",
-    institution: "Schulzentrum SII Utbremen Bremen",
-    institutionUrl: "https://www.szut.de/",
-    degree: "Vocational Training in Application Development",
-    startDate: "Aug 2021",
-    endDate: "May 2024",
+    id: "uit-2020",
+    institution: "University of Information Technology",
+    degree: "Bachelor of Computer Science",
+    startDate: "Sep 2020",
+    endDate: "Dec 2024",
     description:
-      "Dual education: Theory and practice in Full Stack Development. Modern web technologies and agile methods.",
-  },
-  {
-    id: "ulco-2018",
-    institution: "Universite du Littoral Cote d'Opale",
-    institutionUrl: "https://www.univ-littoral.fr",
-    degree: "Bachelor in Networks and Telecommunications",
-    startDate: "Oct 2018",
-    endDate: "Nov 2019",
-    description:
-      "Network administration, IT security, web development. CISCO certifications (CCNA1-CCNA4).",
-  },
-  {
-    id: "ofppt-2016",
-    institution: "OFPPT Ouarzazate",
-    institutionUrl: "https://www.ofppt.ma/",
-    degree: "Training in Computer Development Techniques",
-    startDate: "Sep 2016",
-    endDate: "Jul 2018",
-    description:
-      "Comprehensive training in IT skills, including programming, web development, database management, and networks.",
+      "GPA: 7.7. Relevant coursework: Computer Vision, Natural Language Processing, Image Processing, Pattern Recognition, Data Structures and Algorithms, OOP, and Math for Computer Science.",
   },
 ];
 
 export const certifications: Certification[] = [
   {
-    name: "Microsoft Certified Professional (MCP)",
-    issuer: "Microsoft",
-    date: "May 2018",
-    description: "Focus: HTML, CSS, JavaScript",
+    name: "Problem Solving Using Computational Thinking",
+    issuer: "Coursera",
+    date: "2023",
+    description: "Algorithmic problem solving and computational thinking fundamentals.",
+  },
+  {
+    name: "ChatGPT Prompt Engineering for Developers",
+    issuer: "DeepLearning.AI",
+    date: "2023",
+    description: "Advanced prompt engineering techniques for LLM-powered applications.",
+  },
+  {
+    name: "Knowledge Graphs for RAG",
+    issuer: "DeepLearning.AI",
+    date: "2024",
+    description: "Integrating knowledge graphs with retrieval-augmented generation pipelines.",
+  },
+  {
+    name: "Quantization Fundamentals with Hugging Face",
+    issuer: "DeepLearning.AI",
+    date: "2024",
+    description: "Model quantization techniques to optimize LLMs for production deployment.",
+  },
+  {
+    name: "Machine Learning with Python",
+    issuer: "Coursera",
+    date: "2023",
+    description: "Core machine learning algorithms and implementations using Python and scikit-learn.",
+  },
+  {
+    name: "Supervised Machine Learning: Regression and Classification",
+    issuer: "Coursera",
+    date: "2023",
+    description: "Foundations of supervised learning including linear/logistic regression and neural networks.",
   },
 ];

@@ -4,12 +4,12 @@ import { personalInfo } from "./personal";
 export const heroContent: HeroContent = {
   greeting: "Hi, I'm",
   roles: [
-    "Full Stack Developer",
-    "Agentic Coder",
     "AI Engineer",
+    "LLM Developer",
+    "RAG Architect",
     "Problem Solver",
   ],
-  description: `Building intelligent software with modern web technologies. Specializing in React, Next.js, and AI/ML integration.`,
+  description: `Building production-grade AI systems with LLMs, RAG pipelines, and agentic workflows.`,
   ctaButtons: {
     primary: {
       text: "Download CV",

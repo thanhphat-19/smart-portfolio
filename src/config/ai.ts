@@ -6,25 +6,25 @@ const capabilities: AICapability[] = [
   {
     icon: "Brain",
     title: "RAG",
-    description: "Vector search & retrieval",
+    description: "Retrieval-Augmented Generation",
     iconColor: "text-purple-400",
   },
   {
     icon: "Bot",
-    title: "Agents",
-    description: "LangChain & tools",
+    title: "AI Agents",
+    description: "LangGraph & agentic workflows",
     iconColor: "text-terminal-green",
   },
   {
     icon: "Database",
-    title: "Vector DBs",
-    description: "pgvector & embeddings",
+    title: "Knowledge Graphs",
+    description: "Neo4J & graph-augmented RAG",
     iconColor: "text-terminal-cyan",
   },
   {
     icon: "Zap",
     title: "LLMs",
-    description: "OpenAI & streaming",
+    description: "AWS Bedrock & OpenAI",
     iconColor: "text-amber-400",
   },
 ];
@@ -60,37 +60,37 @@ const githubLink = socialLinks.find((l) => l.name === "GitHub");
 const linkedinLink = socialLinks.find((l) => l.name === "LinkedIn");
 
 const easterEggs: Record<string, string> = {
-  "sudo hire ahmed": `
+  "sudo hire phat": `
 \`\`\`bash
-$ sudo hire ahmed
+$ sudo hire phat
 [sudo] verifying recruiter credentials... ✓
 [████████████████████████████] 100%
 
 ✅ HIRE REQUEST APPROVED
 
-Ready to build something awesome together!
+Ready to build intelligent systems together!
 
 📧 ${personalInfo.email}
 💼 ${linkedinLink?.url.replace("https://", "")}
 🐙 ${githubLink?.url.replace("https://", "")}
 \`\`\`
 
-*Pro tip: He comes with free AI integration skills!*
+*Pro tip: He ships RAG pipelines and AI agents to production!*
 `,
   "hello world": `
-\`\`\`javascript
-console.log("Hey there! 👋");
+\`\`\`python
+print("Hey there! 👋")
 \`\`\`
 
 The classic. I see you're a person of culture! How can I help?
 `,
-  coffee: `${personalInfo.firstName} runs on mass, code compiles on hope. ☕
+  coffee: `${personalInfo.firstName} runs on caffeine, LLMs run on tokens. ☕
 
 But seriously - what can I help you with?`,
   matrix: `*You take the green pill...* 🟢
 
 Welcome to ${personalInfo.firstName}'s portfolio. The rabbit hole goes deep - try \`/skills\` or \`/projects\`.`,
-  "404": `Skills not found? Impossible. Try \`/skills\` to see the full stack.`,
+  "404": `Skills not found? Impossible. Try \`/skills\` to see the full AI stack.`,
   ping: `pong! 🏓 Latency: 0ms (${personalInfo.firstName}'s always ready)`,
 };
 
@@ -101,8 +101,8 @@ Email: ${personalInfo.email}
 GitHub: ${githubLink?.url.replace("https://", "")}
 LinkedIn: ${linkedinLink?.url.replace("https://", "")}
 
-Currently working at ePhilos AG as a Full Stack Developer.
-Skills: React, Next.js, TypeScript, PHP, Node.js, LangChain, OpenAI
+Currently working at Vietnam Silicon as an AI Engineer.
+Skills: Python, FastAPI, LangChain, LangGraph, LLMs, RAG, Knowledge Graphs, Docker, GCP, AWS
 `;
 
 export const aiConfig: AIConfig = {
