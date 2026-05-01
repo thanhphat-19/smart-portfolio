@@ -251,10 +251,10 @@ const config: Config = {
         "cyan-glow":
           "0 0 10px hsl(var(--terminal-cyan) / 0.3), 0 0 20px hsl(var(--terminal-cyan) / 0.2)",
         "glass": "0 8px 32px rgba(0,0,0,0.3)",
-        "glass-hover": "0 8px 32px rgba(0,255,136,0.1)",
+        "glass-hover": "0 8px 32px rgba(251,191,36,0.1)",
         "chat-panel": "0 25px 50px -12px rgba(0,0,0,0.5)",
-        "chat-button": "0 0 30px rgba(0,255,136,0.4)",
-        "chat-button-hover": "0 0 40px rgba(0,255,136,0.6)",
+        "chat-button": "0 0 30px rgba(251,191,36,0.4)",
+        "chat-button-hover": "0 0 40px rgba(192,132,252,0.6)",
       },
       backdropBlur: {
         "xl": "20px",

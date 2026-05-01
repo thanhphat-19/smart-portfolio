@@ -29,11 +29,11 @@
     --terminal-bg: 210 20% 98%;
     --terminal-bg-alt: 210 16% 93%;
     --terminal-border: 214 32% 88%;
-    --terminal-green: 152 69% 35%;
-    --terminal-cyan: 199 80% 40%;
+    --terminal-green: 36 92% 40%;
+    --terminal-cyan: 270 60% 52%;
     --terminal-text: 222 84% 5%;
     --terminal-muted: 215 16% 40%;
-    --terminal-glow: 142 71% 45%;
+    --terminal-glow: 36 92% 40%;
 
     /* Surface colors - Light mode */
     --surface-primary: 0 0% 100%;
@@ -82,11 +82,11 @@
     --terminal-bg: 215 28% 7%;
     --terminal-bg-alt: 215 25% 11%;
     --terminal-border: 215 19% 19%;
-    --terminal-green: 142 71% 45%;
-    --terminal-cyan: 212 92% 67%;
+    --terminal-green: 43 96% 56%;
+    --terminal-cyan: 270 80% 75%;
     --terminal-text: 213 31% 91%;
     --terminal-muted: 215 15% 55%;
-    --terminal-glow: 142 71% 45%;
+    --terminal-glow: 43 96% 56%;
 
     /* Surface colors - Dark mode */
     --surface-primary: 222 47% 6%;
@@ -338,7 +338,7 @@
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(0,255,136,0.3), transparent, rgba(0,255,255,0.2));
+  background: linear-gradient(135deg, rgba(251,191,36,0.3), transparent, rgba(192,132,252,0.2));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   opacity: 0;
@@ -373,10 +373,10 @@
 /* Glow pulse animation */
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(0,255,136,0.3);
+    box-shadow: 0 0 20px rgba(251,191,36,0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(0,255,136,0.5);
+    box-shadow: 0 0 40px rgba(251,191,36,0.5);
   }
 }
 
@@ -430,7 +430,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #00c96b, #00a8d6, #00c96b);
+  background: linear-gradient(90deg, #D97706, #9333ea, #D97706);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -439,7 +439,7 @@
 }
 
 :is(.dark) .gradient-text {
-  background: linear-gradient(90deg, #00ff88, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #FBBF24, #c084fc, #FBBF24);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -448,7 +448,7 @@
 }
 
 .gradient-text-slow {
-  background: linear-gradient(90deg, #00ff88, #00d4ff, #8b5cf6, #00ff88);
+  background: linear-gradient(90deg, #FBBF24, #c084fc, #e879f9, #FBBF24);
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -471,10 +471,10 @@
 /* Availability pulse */
 @keyframes availability-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(0, 255, 136, 0);
+    box-shadow: 0 0 0 8px rgba(251, 191, 36, 0);
   }
 }
 
@@ -533,10 +533,10 @@
 }
 
 .skill-tag:hover {
-  background: rgba(0, 255, 136, 0.15);
-  border-color: rgba(0, 255, 136, 0.5);
+  background: rgba(251, 191, 36, 0.15);
+  border-color: rgba(251, 191, 36, 0.5);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
 }
 
 /* Timeline styles */
@@ -583,7 +583,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(251, 191, 36, 0.1), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -593,12 +593,12 @@
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), 0 0 40px rgba(0, 255, 136, 0.1);
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.3), 0 0 40px rgba(192, 132, 252, 0.1);
 }
 
 /* Feature card gradient */
 .feature-gradient {
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 212, 255, 0.1));
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(192, 132, 252, 0.1));
 }
 
 /* Bento card base - Apple-inspired */
