@@ -10,12 +10,14 @@ const statusColors = {
   active: "bg-green-100 dark:bg-green-500/20 text-green-700 dark:text-green-400 border-green-300 dark:border-green-500/30",
   building: "bg-yellow-100 dark:bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 border-yellow-300 dark:border-yellow-500/30",
   planned: "bg-slate-100 dark:bg-slate-500/20 text-slate-600 dark:text-slate-400 border-slate-300 dark:border-slate-500/30",
+  completed: "bg-blue-100 dark:bg-blue-500/20 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-500/30",
 };
 
 const statusLabels = {
   active: "Live",
   building: "In Progress",
   planned: "Coming Soon",
+  completed: "Completed",
 };
 
 export default function ProductsSection() {
@@ -29,10 +31,7 @@ export default function ProductsSection() {
           transition={{ delay: 0.2 + index * 0.1 }}
           className="flex-shrink-0 md:flex-shrink md:flex-1 md:min-w-0 h-[280px] sm:h-[320px] md:h-full"
         >
-          <Link
-            href={project.url || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="group block h-full rounded-2xl border border-card-theme-border bg-products-bg overflow-hidden hover:border-terminal-green/30 transition-all duration-500 relative"
           >
             {/* Full Image Background */}
@@ -54,27 +53,21 @@ export default function ProductsSection() {
             {/* Gradient Overlay for text readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-products-overlay via-products-overlay/80 via-35% to-transparent" />
 
-            {/* Status badges - Top */}
-            <div className="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span
-                className={`px-2 py-0.5 text-[8px] lg:text-[9px] font-medium rounded-full border backdrop-blur-sm ${statusColors[project.status]}`}
+            {/* Visit button - Top Right */}
+            {project.url && (
+              <Link
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-3 right-3 w-7 h-7 rounded-lg bg-white/70 dark:bg-white/10 backdrop-blur-sm border border-black/10 dark:border-white/10 flex items-center justify-center opacity-60 group-hover:opacity-100 hover:bg-terminal-green/20 hover:border-terminal-green/50 transition-all duration-300 z-10"
+                onClick={(e) => e.stopPropagation()}
               >
-                {statusLabels[project.status]}
-              </span>
-              {index === 0 && (
-                <span className="px-2 py-0.5 text-[8px] lg:text-[9px] text-gray-700 dark:text-foreground/80 bg-white/70 dark:bg-white/10 backdrop-blur-sm rounded-full border border-black/10 dark:border-white/10">
-                  Featured
-                </span>
-              )}
-            </div>
-
-            {/* Arrow indicator - Top Right */}
-            <div className="absolute top-3 right-3 w-7 h-7 rounded-lg bg-white/70 dark:bg-white/10 backdrop-blur-sm border border-black/10 dark:border-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
-              <ArrowUpRight
-                size={14}
-                className="text-foreground group-hover:text-terminal-green transition-colors"
-              />
-            </div>
+                <ArrowUpRight
+                  size={14}
+                  className="text-foreground group-hover:text-terminal-green transition-colors"
+                />
+              </Link>
+            )}
 
             {/* Content Overlay - Bottom */}
             <div className="absolute inset-x-0 bottom-0 p-3 z-10">
@@ -104,7 +97,7 @@ export default function ProductsSection() {
                 )}
               </div>
             </div>
-          </Link>
+          </div>
         </motion.div>
       ))}
     </div>

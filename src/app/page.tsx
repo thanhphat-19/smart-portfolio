@@ -11,12 +11,11 @@ export default async function HomePage() {
   const posts = await getSortedPostsData();
 
   return (
-    <main className="h-full overflow-hidden flex justify-center">
-      <div className="h-full w-full max-w-[1440px] px-3 md:px-4 lg:px-6 py-2 md:py-3">
-        {/* Mobile: scrollable, Desktop: fixed viewport fit */}
-        <div className="h-full overflow-y-auto md:overflow-hidden">
+    <main className="flex justify-center">
+      <div className="w-full max-w-[1440px] px-3 md:px-4 lg:px-6 py-2 md:py-3">
+        <div>
           {/* Desktop Grid Layout */}
-          <div className="hidden md:grid md:h-full md:grid-cols-3 md:grid-rows-[minmax(0,1.05fr)_minmax(0,1.15fr)_minmax(0,0.55fr)] gap-2.5">
+          <div className="hidden md:grid md:grid-cols-3 md:grid-rows-[minmax(280px,1.05fr)_minmax(310px,1.15fr)_minmax(190px,0.55fr)] gap-2.5 md:h-[calc(100svh-68px)]">
             {/* Row 1, Col 1: Hero */}
             <div className="min-h-0 h-full">
               <HeroSection />
