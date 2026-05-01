@@ -180,3 +180,16 @@ src/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Roadmap
+
+### UI
+- Redesign Projects section to highlight 2 featured projects (similar to Blog section layout) with a "View all" button
+- Add dedicated pages: Home, About, Projects, Blog, Contact
+
+### Chatbot
+- Personalize chatbot persona to better reflect my communication style
+- Upgrade to agentic architecture with conversation memory and tool calling (GitHub repos, blog search)
+
+### Backend
+- Role-based access control for chatbot (admin / user / guest)

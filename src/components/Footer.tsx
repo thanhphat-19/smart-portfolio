@@ -38,7 +38,7 @@ export default function Footer() {
       </footer>
 
       {/* Chat button */}
-      <AIChatButton />
+      {personalInfo.chatEnabled && <AIChatButton />}
     </>
   );
 }

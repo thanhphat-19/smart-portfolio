@@ -20,6 +20,7 @@ export interface PersonalInfo {
   profileImage: string;
   website: string;
   summary: string;
+  chatEnabled: boolean;
 }
 
 // SEO Configuration
